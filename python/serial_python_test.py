@@ -8,7 +8,7 @@ import os
 
 
 # connect via serial port (if you are on a PC, you can check this in device manager)
-ser = serial.Serial('COM5', 9600) 	# likely need to change the com port number
+ser = serial.Serial('COM5', 115200) 	# likely need to change the com port number and serial rate
 
 # place to save the raw data files
 directory_path = "raw_data"
@@ -30,20 +30,26 @@ print("logging data... use 'ctrl+c' to stop")
 
 # open csv in append mode ('a')
 with open(csv_filename, 'a', newline='') as file:
+
 	writer = csv.writer(file)
 
-	while True:
+	try: 		# allows us to throw the keyboard exception properly
 
-		# check if serial data is available (are bytes in serial buffer?)
-		if ser.in_waiting:
-		
-			# grab the data from the serial buffer
-			data = ser.readline().decode().rstrip()
+		while True:
 
-			# print data as an output (for debugging... comment out later)
-			#print(f"Received data: {data}")
+			# check if serial data is available (are bytes in serial buffer?)
+			if ser.in_waiting:
+			
+				# grab the data from the serial buffer
+				data = ser.readline().decode().rstrip()
+	
+				# print data as an output (for debugging... comment out later)
+				#print(f"Received data: {data}")
 
-			# write the data into a new line of the csv
-			writer.writerow([data])
+				# write the data into a new line of the csv
+				writer.writerow([data])
+
+	except KeyboardInterrupt:
+		print("Logging stopped by user!")
 
 ser.close()
