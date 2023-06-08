@@ -3,10 +3,10 @@ This repo is a testing ground for building a system that logs data from a ubloxG
 
 The approximate links in the chain are as follows:
 1. ubloxGPS antenna connects to ublox ZED-F9P PCB via SMA-U.FL connector
-2. ublox PCD connects via I2C serial to Arduino (later this is replaced by Jetson?)
+2. ublox circuit board module connects via I2C serial to Arduino (later this is replaced by Jetson?)
 3. Arduino uses the pre-made ublox-sparkfun-GNSS toolbox/functions to parse the data
-4. Arduino connects to Jetson via USB to the Jetson
-5. python script on the Jetson logs the GPS data
+4. Arduino connects to Jetson via USB (or to a PC)
+5. python script on Jetson/PC logs the GPS data
 
 ## Useful Links
 Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire  
