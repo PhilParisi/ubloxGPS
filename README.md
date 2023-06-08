@@ -48,6 +48,21 @@ Note you are actually using a GPS now, so you may need a proper GPS signal (i.e.
 ### IRES_GPSlogger.ino with IRES_GPSlogger.py
 Do not run this until you have successfully run the Example1_GetPositionAccuracy.ino/.py. That is the 'out of the box' pre-fab code that works and should be your starting point to get the system setup and logging. We wrote the .py file but the .ino came straight from uBlox.
 
-These scripts are a modified version of the Example1_GetPosition Accuracy scripts to achieve our preferred data flow and processing approach.
+These scripts are a modified version of the Example1_GetPosition Accuracy scripts to achieve our preferred data flow and processing approach. 
+
+To run:  
+0. setup the above wiring from the Example1
+1. push the code to the arduino
+2. run the python script
+3. ctrl+c to stop logging
+
+The outputted .csv file has the following columns:
+- time elapsed (in arduino time since start of the program, in milliseconds)
+- latitude (in degrees * 10^7)
+- longitude (in degrees * 10^7)
+- altitude (in millimeters)
+- accuracy (in millimeters, not really sure how they're calculating this)
+
+
 
 
