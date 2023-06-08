@@ -1,6 +1,6 @@
 // Goal: this script is a basic script to test serial comms with the serial monitor in Arduino IDE
 // the data being sent over serial is dummy test data
-// the serial monitor should should this data as it is collected
+// the serial monitor should display this data as it is collected
 
 // HOW TO USE THIS SCRIPT
 // 1. plug in the arduino to your laptop, and select the 'Board' and 'Port' in the 'Tools' dropdown
