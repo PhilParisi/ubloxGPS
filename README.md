@@ -43,3 +43,10 @@ To run:
 3. ctrl+c to stop the python logging script
 
 Note you are actually using a GPS now, so you may need a proper GPS signal (i.e. outdoors will be better).
+
+### IRES_GPSlogger.ino with IRES_GPSlogger.py
+Do not run this until you have successfully run the Example1_GetPositionAccuracy.ino/.py. That is the 'out of the box' pre-fab code that works and should be your starting point to get the system setup and logging. We wrote the .py file but the .ino came straight from uBlox.
+
+These scripts are a modified version of the Example1_GetPosition Accuracy scripts to achieve our preferred data flow and processing approach.
+
+
