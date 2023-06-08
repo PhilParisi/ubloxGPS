@@ -15,10 +15,16 @@ Note: SDA = serial data, SCL = serial clock
 
 ## GPS module ZED-F9P-02B-00
 The GPS module is from ublox and can be connected via:
-1. USB-C cable to a computer. this allows you to use uBlox's[uCenter2 software](https://www.u-blox.com/en/u-center-2)
+1. USB-C cable to a computer. this allows you to use uBlox's [uCenter2 software](https://www.u-blox.com/en/u-center-2)
 2. or via serial pins (as shown below) over I2C to an arduino. this allows you to live parse data using the [GPS Arduino Library](https://github.com/sparkfun/SparkFun_u-blox_GNSS_v3) and then log it using a python script
 
 ![ZED-F9P GPS module](./extras/rtk-gps.jpg)
+
+The lights on the module indicate:
+1. PWR (red) --> the device is powered
+2. PPS (yellow blinking light, off in the picture) -->
+3. RTK (green) -->
+4. FENCE (blue) --> 
 
 ## Basic Test Scripts (no GPS or wiring)
 #### serial_console_test.ino
