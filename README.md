@@ -13,6 +13,13 @@ Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire
 I2C serial basics https://www.youtube.com/watch?v=6IAkYpmA1DQ  
 Note: SDA = serial data, SCL = serial clock  
 
+## GPS module ZED-F9P-02B-00
+The GPS module is from ublox and can be connected via:
+1. USB-C cable to a computer. this allows you to use uBlox's[uCenter2 software](https://www.u-blox.com/en/u-center-2)
+2. or via serial pins (as shown below) over I2C to an arduino. this allows you to live parse data using the [GPS Arduino Library](https://github.com/sparkfun/SparkFun_u-blox_GNSS_v3) and then log it using a python script
+
+![ZED-F9P GPS module](./extras/...)
+
 ## Basic Test Scripts (no GPS or wiring)
 #### serial_console_test.ino
 This is a basic arduino script that requires no wiring (except for connecting the arduino via USB to computer). Simply pushing that file to the arduino causes the arduino to send fake data over the serial connection (from the USB), which can be viewed by the serial monitor in the arduino IDE.
@@ -63,6 +70,7 @@ The outputted .csv file has the following columns:
 - altitude (in millimeters)
 - accuracy (in millimeters, not really sure how they're calculating this)
 
+The name of the csv file contains the date and time when it was created, so you can combine this time with the arduino elapsed time to get time stamps.
 
 
 
