@@ -11,7 +11,7 @@ The approximate links in the chain are as follows:
 ## Useful Links
 Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire  
 I2C serial basics https://www.youtube.com/watch?v=6IAkYpmA1DQ  
-ZED-F9P Hookup guide https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide/all
+ZED-F9P Hookup guide https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide/all  
 Note: SDA = serial data, SCL = serial clock  
 
 ## GPS module ZED-F9P-02B-00
