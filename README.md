@@ -9,9 +9,9 @@ The approximate links in the chain are as follows:
 5. python script on the Jetson logs the GPS data
 
 ## Useful Links
-Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire
-I2C serial basics https://www.youtube.com/watch?v=6IAkYpmA1DQ
-Note: SDA = serial data, SCL = serial clock
+Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire  
+I2C serial basics https://www.youtube.com/watch?v=6IAkYpmA1DQ  
+Note: SDA = serial data, SCL = serial clock  
 
 ## Basic Test Scripts (no GPS or wiring)
 #### serial_console_test.ino
