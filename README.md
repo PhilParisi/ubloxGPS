@@ -11,6 +11,7 @@ The approximate links in the chain are as follows:
 ## Useful Links
 Arduino I2C serial comm pins https://docs.arduino.cc/learn/communication/wire  
 I2C serial basics https://www.youtube.com/watch?v=6IAkYpmA1DQ  
+ZED-F9P Hookup guide https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide/all
 Note: SDA = serial data, SCL = serial clock  
 
 ## GPS module ZED-F9P-02B-00
@@ -22,9 +23,9 @@ The GPS module is from ublox and can be connected via:
 
 The lights on the module indicate:
 1. PWR (red) --> the device is powered
-2. PPS (yellow blinking light, off in the picture) -->
-3. RTK (green) -->
-4. FENCE (blue) --> 
+2. PPS (yellow blinking light, off in the picture) --> pulse-per-second output pin, blinks at 1Hz when getting basic position lock from GPS/GNSS
+3. RTK (green) --> real time kinematic output pin, remains high (on) when module is in normal GPS mode, blinks when receiving the RTCM correct data (enabling RTK-GPS)
+4. FENCE (blue) --> geofence output pin, idk why this on cause we didn't configure anything but this hasn't given us any issues
 
 ## Basic Test Scripts (no GPS or wiring)
 #### serial_console_test.ino
