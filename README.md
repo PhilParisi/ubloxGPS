@@ -32,7 +32,7 @@ To run:
 ### Example1_GetPositionAccuracy.ino with Example1_GetPositionAccuracy.py
 This .ino script is from the pre-built ublox arduino library. Setup is necessary -- see wiring diagram below. We have to use I2C serial comms. Connect jumper cables from the uBlox ZED-F9P (I2C contacts: GND, 3V3, SDA, SCL). The 3.3V will power the module and the SCL is a clock to time the data sent from SDA. 
 
-![wiring diagram](./extras/wiring_uBloxToCSV.jpg)
+![wiring diagram](./extras/wiring_uBloxToCSV.JPG)
 
 To run:
 0. setup the above wiring
