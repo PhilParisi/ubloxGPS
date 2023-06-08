@@ -36,7 +36,7 @@ This .ino script is from the pre-built ublox arduino library. Setup is necessary
 
 ![wiring diagram](./extras/wiring_uBloxToCSV.JPG)
 
-To run:
+To run:  
 0. setup the above wiring
 1. push the code to the arduino using the arduino IDE
 2. run the python script (be sure the adjust the baud rate / comm port  to match what the .ino specifies)
