@@ -12,15 +12,15 @@ The approximate links in the chain are as follows:
 Arduino I2C serial comms https://docs.arduino.cc/learn/communication/wire
 
 
-
-### serial_console_test.ino
+## Basic Test Scripts (no GPS or wiring)
+#### serial_console_test.ino
 This is a basic arduino script that requires no wiring (except for connecting the arduino via USB to computer). Simply pushing that file to the arduino causes the arduino to send fake data over the serial connection (from the USB), which can be viewed by the serial monitor in the arduino IDE.
 
 To run:
 1. push the code to the arduino using the arduino IDE
 2. open the serial monitor (be sure the adjust the baud rate / comm port to match what the .ino specifies)
 
-### serial_python_test.ino with serial_python_test.py
+#### serial_python_test.ino with serial_python_test.py
 This script also does not require any wiring (except for USB connection) and instead of the arduino IDE serial monitor to view the data being transmitted, a python script is used to read the data of the serial USB connection and logs it into a .csv.
 
 To run:
@@ -29,6 +29,7 @@ To run:
  - (if WIN command prompt --> navigate to the location of the script, then type the name of the script and hit 'enter')
 3. ctrl+c to stop the python logging script
 
+## Getting GPS Data Live (w/ GPS and wiring)
 ### Example1_GetPositionAccuracy.ino with Example1_GetPositionAccuracy.py
 This .ino script is from the pre-built ublox arduino library. Setup is necessary -- see wiring diagram below. We have to use I2C serial comms. Connect jumper cables from the uBlox ZED-F9P (I2C contacts: GND, 3V3, SDA, SCL). The 3.3V will power the module and the SCL is a clock to time the data sent from SDA. 
 
