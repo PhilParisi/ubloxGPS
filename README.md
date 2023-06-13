@@ -1,4 +1,7 @@
 # ubloxGPS
+
+THIS REPOSITORY HAS MIGRATED TO [SONAR LOCALIZATION](https://github.com/PhilParisi/SonarLocalization) and IS NOT LONGER MAINTAINED.
+
 This repo is a testing ground for building a system that logs data from a ubloxGPS receiver.
 
 The approximate links in the chain are as follows:
